@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w {
+    height: 3000px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.firstSection {
+    z-index: -2;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 549.98px;
+    background: url(./image/header2.png) no-repeat;
+    background-size: contain;
+}
+
+.header {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.3);
+    z-index: -1;
+}
+
+.cqnu {
+    float: left;
+    width: 600px;
+    height: 80px;
+    background: url(./image/cqnu.png) no-repeat;
+    background-size: 60px;
+    background-position: 0 10px;
+}
+
+.cqnu p {
+    font-size: 24px;
+    font-weight: 600px;
+    color: #ffffff;
+    line-height: 80px;
+    margin-left: 70px;
+}
+
+.nav,
+.firstNav {
+    height: 80px;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 80px;
+    text-align: center;
+    font-size: 22px
+}
+
+.Nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 800px;
+    color: #dc3838;
+}
+
+.Nav a {
+    display: block;
+    float: right;
+}
+
+li:hover {
+    font-weight: 700;
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-duration: alternate;
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(0, -10px);
+    }
+}
