@@ -198,7 +198,89 @@ li {
 
 .purple {
     float: left;
-    width: 600px;
+    width: 1250px;
     height: 555px;
     background-color: #9b35d6;
 }
+
+.keCheng {
+    font-size: 25px;
+    color: #333;
+}
+
+.Nav1 {
+    display: flex;
+}
+
+.Nav1 a {
+    text-decoration: none;
+    display: block;
+    margin-left: 28px;
+    font-size: 18px;
+    color: #333333
+}
+
+.all {
+    color: red;
+}
+
+.content {
+    width: 1250px;
+    height: 400px;
+}
+
+.box,
+.box1 {
+    float: left;
+    width: 240px;
+    height: 170px;
+    margin: 22px 20px 20px 10px;
+    background-color: red;
+}
+
+.read {
+    float: left;
+    width: 1250px;
+    height: 380px;
+    margin-top: 50px;
+    background-color: pink;
+}
+
+.yueDU {
+    font-size: 25px;
+    color: #333;
+}
+
+.book {
+    width: 1250px;
+    height: 250px;
+    margin-top: 20px;
+    background-color: green;
+}
+
+.teacher {
+    float: left;
+    width: 1250px;
+    height: 450px;
+    margin-top: 50px;
+    background-color: blue;
+}
+
+.laoShi {
+    font-size: 25px;
+    color: #333;
+}
+
+.people {
+    width: 1250px;
+    height: 340px;
+    margin-top: 20px;
+    display: flex;
+    background-color: orange;
+}
+
+.people a {
+    text-decoration: none;
+}
+
+.people a:hover {}
