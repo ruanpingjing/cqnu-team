@@ -8,6 +8,10 @@
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     list-style-type: none;
 }
@@ -90,17 +94,15 @@ li {
 .right {
     float: left;
     position: relative;
-    width: 700px;
+    width: 550px;
     height: 500px;
     margin-top: 50px;
-    background-color: #e4e2e2;
 }
 
 .notice {
     width: 100%;
     height: 50px;
-    margin-top: 50px;
-    background-color: antiquewhite;
+    margin-top: 30px;
 }
 
 .red {
@@ -109,7 +111,6 @@ li {
     margin-right: 10px;
     height: 40px;
     width: 10px;
-    background-color: #4bdb8c;
 }
 
 .tongZhi {
@@ -126,27 +127,23 @@ li {
     color: #7f8180;
 }
 
-.left {
-    float: right;
-    position: relative;
-    width: 600px;
-    height: 500px;
-    margin-top: 50px;
-    background-color: aqua;
-}
-
 .four li a {
     display: block;
     margin: 0 15px;
     width: 100px;
     height: 30px;
     border-radius: 25px;
-    background-color: #dc3838;
     text-decoration: none;
     line-height: 30px;
     color: #000;
     text-align: center;
-    border: #7f8180 solid 1px;
+    border: #ededed solid 1px;
+}
+
+.four .one {
+    width: 70px;
+    background-color: #dd3030;
+    color: #ffffff;
 }
 
 .four {
@@ -154,6 +151,7 @@ li {
     justify-content: center;
     width: 545px;
     margin: 10px 0;
+    font-size: 18px;
 }
 
 .four::after {
@@ -180,26 +178,237 @@ li {
 
 .date {
     width: 100%;
-    height: 100px;
+    height: 60px;
     margin-top: 20px;
-    background-color: antiquewhite;
+    border-bottom: solid 1px #333;
+    padding-bottom: 40px;
 }
 
 .date em {
-    color: #dc3838;
-    font-size: 40px;
+    float: left;
+    position: relative;
+    top: 6px;
+    left: 10px;
+    font-size: 50px;
+    font-weight: 700;
     font-style: normal;
+    color: #dd3030;
+}
+
+.date span {
+    float: left;
+    position: relative;
+    top: 3px;
+    left: 7px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .day {
-    width: 100px;
-    height: 100%;
-    background-color: #dc9797;
+    width: 80px;
+    height: 100px;
+}
+
+.arrow {
+    display: block;
+    width: 60px;
+    height: 15px;
+    position: relative;
+    top: -80px;
+    left: 100px;
+    background-color: #dd3030;
+}
+
+.arrow2 {
+    float: left;
+    position: relative;
+    top: 3px;
+    left: 18px;
+    width: 60px;
+    height: 15px;
+    background-color: #dd3030;
+}
+
+.date p {
+    position: relative;
+    top: -100px;
+    left: 173px;
+    text-decoration: none;
+    color: #000;
+}
+
+p.two {
+    position: relative;
+    top: -80px;
+    left: 100px;
+    text-decoration: none;
+    color: #686565;
+}
+
+.text {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.text a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border-color: #84c9b4;
+}
+
+.month-date {
+    float: left;
+    width: 70px;
+    margin-left: 10px;
+    border-right: 1px solid #706c6c;
+    color: #000;
+}
+
+.news {
+    float: left;
+    position: relative;
+    left: 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.news:hover {
+    color: #dd3030;
+}
+
+.left {
+    float: right;
+    position: relative;
+    width: 700px;
+    height: 450px;
+    margin-top: 85px;
+    background: url(./image/m1.jpg);
+    background-size: cover;
+}
+
+.bottom {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
+    bottom: 0;
+    padding: 10px 25px;
+    background-color: rgba(1, 1, 1, 0.7);
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(1, 1, 1, 0.7);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.left .left {
+    background-color: rgba(1, 1, 1, 0.7);
+    left: 0;
+}
+
+.left .right {
+    right: 0;
 }
 
 .purple {
     float: left;
-    width: 600px;
+    width: 1250px;
     height: 555px;
     background-color: #9b35d6;
 }
+
+.keCheng {
+    font-size: 25px;
+    color: #333;
+}
+
+.Nav1 {
+    display: flex;
+}
+
+.Nav1 a {
+    text-decoration: none;
+    display: block;
+    margin-left: 28px;
+    font-size: 18px;
+    color: #333333
+}
+
+.all {
+    color: red;
+}
+
+.content {
+    width: 1250px;
+    height: 400px;
+}
+
+.box,
+.box1 {
+    float: left;
+    width: 240px;
+    height: 170px;
+    margin: 22px 20px 20px 10px;
+    background-color: red;
+}
+
+.read {
+    float: left;
+    width: 1250px;
+    height: 380px;
+    margin-top: 50px;
+    background-color: pink;
+}
+
+.yueDU {
+    font-size: 25px;
+    color: #333;
+}
+
+.book {
+    width: 1250px;
+    height: 250px;
+    margin-top: 20px;
+    background-color: green;
+}
+
+.teacher {
+    float: left;
+    width: 1250px;
+    height: 450px;
+    margin-top: 50px;
+    background-color: blue;
+}
+
+.laoShi {
+    font-size: 25px;
+    color: #333;
+}
+
+.people {
+    width: 1250px;
+    height: 340px;
+    margin-top: 20px;
+    display: flex;
+    background-color: orange;
+}
+
+.people a {
+    text-decoration: none;
+}
+
+.people a:hover {}
