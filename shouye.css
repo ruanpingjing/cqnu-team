@@ -93,7 +93,7 @@ li {
     width: 700px;
     height: 500px;
     margin-top: 50px;
-    background-color: #1a1919;
+    background-color: #e4e2e2;
 }
 
 .notice {
@@ -168,24 +168,6 @@ li {
     width: 60px;
 }
 
-.notice {
-    width: 100%;
-    height: 50px;
-    margin-top: 50px;
-    background-color: antiquewhite;
-}
-
-.date1 {
-    width: 80px;
-    height: 100px;
-    background-color: #37b04d;
-}
-
-.date1 em {
-    color: #dc3838;
-    font-size: 30px;
-}
-
 .red-img {
     float: left;
     width: 100%;
@@ -194,6 +176,25 @@ li {
     background: url("./image/h6.png");
     background-size: cover;
     background-position: center;
+}
+
+.date {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+
+.date em {
+    color: #dc3838;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.day {
+    width: 100px;
+    height: 100%;
+    background-color: #dc9797;
 }
 
 .purple {
