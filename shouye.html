@@ -11,22 +11,54 @@
 
 <body>
     <!--firstSection开始-->
-    <div class=" firstSection">
-        <div class=" header "></div>
-        <div class="w">
-            <div class="cqnu">
-                <p>重庆师范大学通识教育一体化平台</p>
-            </div>
+    <div class=" firstSection box8">
+        <div class="imgList">
+            <a href="#" class="show">
+                <div class="box-img"><img src="./image/head1.png" width="100%"></div>
+            </a>
+            <a href="#">
+                <div class="box-img"><img src="./image/head2.png" width="100%"></div>
+            </a>
+            <a href="#">
+                <div class="box-img"><img src="./image/head(3).jpg" width="100%"></div>
+            </a>
 
-            <div class="w Nav">
-                <li><a href="#" class="firstNav">首页</a></li>
-                <li><a href="#" class="nav">课程</a></li>
-                <li><a href="#" class="nav">测评</a></li>
-                <li><a href="#" class="nav">广场课</a></li>
-                <li><a href="#" class="nav">登录</a></li>
+        </div>
+        <div class="leftBtn">&lt</div>
+        <div class="rightBtn">&gt</div>
+        <div class="btnList">
+            <span class="che"></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div>
+
+            <div class=" header "></div>
+            <div class="w">
+                <div class="cqnu">
+                    <p>重庆师范大学通识教育一体化平台</p>
+                </div>
+
+                <div class="w Nav">
+                    <li><a href="#" class="nav">登录</a></li>
+                    <li><a href="#" class="nav">广场课</a></li>
+                    <li><a href="#" class="nav">测评</a></li>
+                    <li><a href="#" class="nav">课程</a></li>
+                    <li><a href="#" class="firstNav">首页</a></li>
+                </div>
             </div>
         </div>
+
+        <div class="leftBtn">&lt</div>
+        <div class="rightBtn">&gt</div>
+        <div class="btnList">
+            <span class="che"></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
+
     <!--firstSection结束-->
 
 
@@ -275,7 +307,12 @@
                         <p>李山</p>
                     </li>
                 </div>
-                <div class="introduce"></div>
+
+
+            </div>
+            <div class="introduce">
+                <P>李山<br><br> 现为北京师范大学教授，博士生导师，启功先生弟子。主要研究方向为中国古代文学史、中国文化史。先后出版过《诗经的文化精神》、《诗经析读》、《诗经新注》等诗经研究专著，及《中国文化概论》。
+                </P>
             </div>
         </div>
     </div>
@@ -292,6 +329,61 @@
         </div>
         <div class="foot-font2">京ICP备10040544</div>
         <!--forthSection结束-->
+        <div class="v">
+
+        </div>
+
+        <script>
+            window.onload = function() {
+                let imgList = document.querySelectorAll('.imgList>a')
+                let leftBtn = document.querySelector('.leftBtn')
+                let rightBtn = document.querySelector('.rightBtn')
+                let btnList = document.querySelectorAll('.btnList>span')
+                let index = 0;
+                let time;
+                autoPlay();
+                btnClick();
+
+                function autoPlay() {
+                    time = setInterval(() => {
+                        index == imgList.length - 1 ? index = 0 : index++; //下标==imgList-1,下标index从0开始
+                        public();
+                    }, 3000)
+                }
+                leftBtn.onclick = function() { //获取元素绑定点击事件
+                    clearInterval(time); //清除记时间
+                    index == 0 ? index = imgList.length - 1 : index--;
+                    public();
+                    autoPlay(); //清楚后要再次启动
+                }
+                rightBtn.onclick = function() {
+                    clearInterval(time); //清除记时间
+                    index == imgList.length - 1 ? index = 0 : index++;
+                    public();
+                    autoPlay(); //清楚后要再次启动
+                }
+
+                function public() { //将显示和隐藏放进函数里，重复调用
+                    for (let i = 0; i < imgList.length; i++) {
+                        imgList[i].classList.remove('show');
+                        btnList[i].classList.remove('che');
+                    }
+                    imgList[index].classList.add('show');
+                    btnList[index].classList.add('che');
+                }
+
+                function btnClick() {
+                    for (let i = 0; i < btnList.length; i++) {
+                        btnList[i].onclick = function() {
+                            clearInterval(time);
+                            index = i;
+                            public();
+                            autoPlay();
+                        }
+                    }
+                }
+            }
+        </script>
 </body>
 
 </html>
