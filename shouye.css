@@ -130,7 +130,7 @@
                 .cqnu {
                     position: absolute;
                     float: left;
-                    top: 0;
+                    top: 10px;
                     width: 600px;
                     height: 80px;
                     background: url(./image/cqnu.png) no-repeat;
@@ -141,7 +141,7 @@
                     font-size: 24px;
                     font-weight: 600px;
                     color: #ffffff;
-                    line-height: 80px;
+                    line-height: 60px;
                     margin-left: 70px;
                 }
                 
