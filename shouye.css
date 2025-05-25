@@ -827,3 +827,12 @@
                     font-size: 14px;
                     color: #ffffff;
                 }
+                
+                .v {
+                    position: fixed;
+                    bottom: 80px;
+                    right: 50px;
+                    width: 125px;
+                    height: 125px;
+                    background: url(./image/sdkLogo.gif);
+                }
