@@ -16,126 +16,26 @@ li {
     list-style-type: none;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .firstSection {
+    z-index: -2;
     position: relative;
-    width: 100%;
-    height: 500px;
-    min-height: 600px;
-    margin-bottom: 20px;
+    min-height: 400px;
     box-sizing: border-box;
+    background: url(./image/header2.png) no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
-}
-
-li {
-    list-style-type: none;
-}
-
-.box8 {
-    height: 500px;
-    width: 100%;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.box8>.imgList {
-    height: 500px;
-    width: 100%;
-    height: 100%;
-}
-
-.box8>.imgList>a {
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    display: none;
-}
-
-.box8>.imgList>a>img {
-    position: absolute;
-    width: 100%;
-    height: 500px;
-}
-
-.leftBtn {
-    position: absolute;
-    width: 35px;
-    height: 70px;
-    color: #ccc;
-    top: 200px;
-    border-radius: 0 5px 5px 0;
-    text-align: center;
-    line-height: 70px;
-    font-size: 27px;
-}
-
-.leftBtn:hover {
-    background-color: #1f1f1f;
-    color: #f8f8f8;
-}
-
-.rightBtn {
-    position: absolute;
-    right: 0;
-    width: 35px;
-    height: 70px;
-    color: #ccc;
-    top: 200px;
-    border-radius: 5px 0 0 5px;
-    text-align: center;
-    line-height: 70px;
-    font-size: 27px;
-}
-
-.rightBtn:hover {
-    background-color: #1f1f1f;
-    color: #f8f8f8;
-}
-
-.btnList span {
-    display: block;
-    margin-right: 10PX;
-    width: 14px;
-    height: 14px;
-    border-radius: 100%;
-    background-color: #e9e3e3;
-}
-
-.btnList {
-    display: flex;
-    position: absolute;
-    top: 650px;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.che {
-    background: rgb(255, 255, 255) !important;
-}
-
-.show {
-    display: block !important;
 }
 
 .header {
     position: absolute;
-    top: 0;
     height: 80px;
     width: 100%;
     background-color: rgba(1, 1, 1, 0.3);
+    z-index: -1;
 }
 
 .cqnu {
-    position: absolute;
     float: left;
-    top: 0;
     width: 600px;
     height: 80px;
     background: url(./image/cqnu.png) no-repeat;
@@ -163,8 +63,10 @@ li {
 }
 
 .Nav {
-    position: absolute;
-    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 800px;
+    color: #dc3838;
 }
 
 .Nav a {
@@ -176,7 +78,7 @@ li {
     font-weight: 700;
     animation-name: up;
     animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    animation-duration: alternate;
     cursor: pointer;
 }
 
@@ -596,7 +498,6 @@ img {
     height: 450px;
     margin-top: 50px;
     background-color: #ffffff;
-    margin-bottom: 40px;
 }
 
 .laoShi {
@@ -608,7 +509,7 @@ img {
 
 .people {
     width: 100%;
-    height: 230px;
+    height: 340px;
     margin-top: 20px;
     display: flex;
     background-color: #ffffff;
@@ -644,24 +545,14 @@ img {
 }
 
 .introduce {
-    width: 1400px;
-    height: 165px;
-    padding: 40px 80px 0px 80px;
-    background-color: #fafafa;
-    box-shadow: 5px 5px 5px black 0.1;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.introduce p {
-    font-size: 17px;
+    background-color: #ffffff;
 }
 
 .foot {
     float: left;
     width: 100%;
     height: 270px;
+    margin-top: 40px;
     background-color: #484747;
 }
 
@@ -692,13 +583,4 @@ img {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
-}
-
-.v {
-    position: fixed;
-    bottom: 80px;
-    right: 50px;
-    width: 125px;
-    height: 125px;
-    background: url(./image/sdkLogo.gif);
 }
